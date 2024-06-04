@@ -8,18 +8,22 @@
 
 /* Begin PBXBuildFile section */
 		A79468BC2C0F2CEB00E4CE16 /* idomyownstuntsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A79468BB2C0F2CEB00E4CE16 /* idomyownstuntsApp.swift */; };
-		A79468BE2C0F2CEB00E4CE16 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A79468BD2C0F2CEB00E4CE16 /* ContentView.swift */; };
 		A79468C02C0F2CEC00E4CE16 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A79468BF2C0F2CEC00E4CE16 /* Assets.xcassets */; };
 		A79468C42C0F2CEC00E4CE16 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A79468C32C0F2CEC00E4CE16 /* Preview Assets.xcassets */; };
+		A79468D02C0F468000E4CE16 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A79468CF2C0F468000E4CE16 /* MainView.swift */; };
+		A79468D22C0F471C00E4CE16 /* Stunt.swift in Sources */ = {isa = PBXBuildFile; fileRef = A79468D12C0F471C00E4CE16 /* Stunt.swift */; };
+		A79468D62C0F485900E4CE16 /* StuntCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A79468D52C0F485900E4CE16 /* StuntCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		A79468B82C0F2CEB00E4CE16 /* idomyownstunts.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = idomyownstunts.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A79468BB2C0F2CEB00E4CE16 /* idomyownstuntsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = idomyownstuntsApp.swift; sourceTree = "<group>"; };
-		A79468BD2C0F2CEB00E4CE16 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		A79468BF2C0F2CEC00E4CE16 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A79468C12C0F2CEC00E4CE16 /* idomyownstunts.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = idomyownstunts.entitlements; sourceTree = "<group>"; };
 		A79468C32C0F2CEC00E4CE16 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		A79468CF2C0F468000E4CE16 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		A79468D12C0F471C00E4CE16 /* Stunt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stunt.swift; sourceTree = "<group>"; };
+		A79468D52C0F485900E4CE16 /* StuntCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StuntCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,10 +56,11 @@
 		A79468BA2C0F2CEB00E4CE16 /* idomyownstunts */ = {
 			isa = PBXGroup;
 			children = (
-				A79468BB2C0F2CEB00E4CE16 /* idomyownstuntsApp.swift */,
-				A79468BD2C0F2CEB00E4CE16 /* ContentView.swift */,
-				A79468BF2C0F2CEC00E4CE16 /* Assets.xcassets */,
 				A79468C12C0F2CEC00E4CE16 /* idomyownstunts.entitlements */,
+				A79468BB2C0F2CEB00E4CE16 /* idomyownstuntsApp.swift */,
+				A79468BF2C0F2CEC00E4CE16 /* Assets.xcassets */,
+				A79468CA2C0F2CF100E4CE16 /* App */,
+				A79468CB2C0F2CF500E4CE16 /* Background */,
 				A79468C22C0F2CEC00E4CE16 /* Preview Content */,
 			);
 			path = idomyownstunts;
@@ -67,6 +72,47 @@
 				A79468C32C0F2CEC00E4CE16 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		A79468CA2C0F2CF100E4CE16 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				A79468D42C0F484900E4CE16 /* Components */,
+				A79468D32C0F483C00E4CE16 /* Views */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		A79468CB2C0F2CF500E4CE16 /* Background */ = {
+			isa = PBXGroup;
+			children = (
+				A79468CC2C0F2D2D00E4CE16 /* Models */,
+			);
+			path = Background;
+			sourceTree = "<group>";
+		};
+		A79468CC2C0F2D2D00E4CE16 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				A79468D12C0F471C00E4CE16 /* Stunt.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		A79468D32C0F483C00E4CE16 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				A79468CF2C0F468000E4CE16 /* MainView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		A79468D42C0F484900E4CE16 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				A79468D52C0F485900E4CE16 /* StuntCell.swift */,
+			);
+			path = Components;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,8 +185,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A79468BE2C0F2CEB00E4CE16 /* ContentView.swift in Sources */,
+				A79468D62C0F485900E4CE16 /* StuntCell.swift in Sources */,
+				A79468D02C0F468000E4CE16 /* MainView.swift in Sources */,
 				A79468BC2C0F2CEB00E4CE16 /* idomyownstuntsApp.swift in Sources */,
+				A79468D22C0F471C00E4CE16 /* Stunt.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
